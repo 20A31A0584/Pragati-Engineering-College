@@ -1,0 +1,247 @@
+######seperator
+a,b,c=10,20,30
+print(a,b,c,sep="-")
+#print(09,12,2016,sep="-")
+print('09','12','2016',sep='-')
+print('a','b','c',sep='')
+##0UTPUT
+10-20-30
+09-12-2016
+abc
+######end
+a=10
+b=20
+c=30
+print(a)
+print(b)
+print(c)
+print(a,b,c)
+print(a,end=' ')
+print(b,end=' ')
+print(c,end=' ')
+print(a,end='*')
+print(b)
+##OUTPUT
+10
+20
+30
+10 20 30
+10 20 30 10*20
+######SPLIT() METHOD
+input().split(seperator,maxsplit)
+#####split
+x,y,z=input().split()
+print(x)
+print(y)
+print(z)
+##output
+10 20 30
+10
+20
+30
+sx,y,z=input().split('*')
+print(x)
+print(y)
+print(z)
+##output
+10 20 30 * 40 50 60 * 70 80 90
+10 20 30 
+40 50 60 
+70 80 90
+x,y,z=input().split('0')
+print(x)
+print(y)
+print(z)
+##output
+1 02 03
+1 
+2 
+3
+######CONTROL STATEMENTS
+1.email="nishi@gmail.com"
+pw=123
+cemail=input()
+cpw=int(input())
+if(cemail==email and cpw==pw):
+  print("login successfully")
+else:
+  print("unsuccessfull")
+##output
+nishi@gmail.com
+123
+login successfully
+2.a=5##only value no datatype is shown in ==
+b=5.0
+if a==b:
+  print("yes")
+else:
+  print("no")
+##output
+yes
+a=5
+b=5.3
+##output
+no
+3.a=5
+b=True
+if 1==b:
+  print("yes")
+else:
+  print("no")
+##OUTPUT
+TRUE
+4.a=int(input())
+qu=a//7
+if qu*7==a:
+  print("divisible")
+else:
+  print("not divisible")
+##OUTPUT
+49 DIVISIBLE
+5.email="nishi@gmail.com"
+pw=123
+otp=1234
+cemail=input()
+cpw=int(input())
+if email==cemail and pw==cpw:
+  cotp=int(input())
+  if otp==cotp:
+     print("success")
+  else:
+    print("wrong otp")
+elif email!=cemail and pw==cpw:
+  print("wrong mail")
+elif email==cemail and pw!=cpw:
+  print("wrong pw")
+elif email!=cemail and pw!=cpw:
+  print("email and pw are wrong12")
+##output
+nishi@gmail.com
+123
+6546
+wrong otp
+######iteration
+*no increment and decrement operator in python 
+*we use in and not in opeerator -->membership operator
+
+a="nishitha"
+print('n' in a)
+output--true
+##3
+for i in range(1,30,2): for i in range(1,30):
+  r=i%10                  if(i%2==1 and i<=5):
+  if r==5:                   print(i*5)
+    print(i)
+###output
+5
+15
+25
+ex1
+days=int(input())
+if days<=84:
+  calls=int(input())
+  msg=int(input())
+  data=float(input())
+  print("remaining days:",84-days)
+  print("remaining calls:",3000-calls) if calls<=3000 else print("kindly top up")
+  print("remaining msg:",100-msg) if msg<=100 else print("message failed")
+  print("remaining data:",round((2-data),3)) if data<=2 else print("limit exceed ")
+else:
+  print("your plan expired")
+##output
+80
+3001
+101
+2.7
+remaining days: 4
+kindly top up
+message failed
+limit exceed 
+ex2
+for i in range(-10,0,2):
+  print(i,end=" ")
+##OUTPUT
+-10 -8 -6 -4 -2 
+####patterns
+ex3-for i in range(0,3):
+  for j in range(0,i+1):
+      print("*",end=" ")
+  print("\n")
+##output
+*
+**
+***
+i-->         j-->
+0            0
+11           01
+222          012
+ex-4
+for i in range(97,102,2):
+  for j in range(97,i+1):
+      print(chr(i),end=" ")
+  print("\n")
+##outpuy
+a
+ccc
+eeeee
+ex-5
+for i in range(97,102,2):
+  for j in range(97,i+1,2):
+      print(chr(i),end=" ")
+  print("\n")
+##output
+a
+cc
+eee
+ex-6
+i=1
+while(i<=10):
+  print(i,"* 10=",i*10)
+  i+=1
+##output
+1 * 10= 10
+2 * 10= 20
+3 * 10= 30
+4 * 10= 40
+5 * 10= 50
+6 * 10= 60
+7 * 10= 70
+8 * 10= 80
+9 * 10= 90
+10 * 10= 100
+ex-7
+i,j=0,0
+while(i<3):
+  j=0
+  while(j<i+1):
+    print("*",end=" ")
+    j+=1
+  print("\n")
+  i+=1
+##output
+*
+**
+***
+c language
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    printf("Hello world\n");
+    for(int i=0;i<=3;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+##output
+*
+**
+***
+
+
